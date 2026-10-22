@@ -1,68 +1,30 @@
-# Faster Meet — Interactive Client Prototype
+# Faster Meet — interactive client prototype
 
-Prepared by **Allam Solutions** · 22 October 2026
+Prepared by **Allam Solutions** · 22 October 2026. [Open the live GitHub Pages preview](https://rojieramy.github.io/fastermeet-prototype/).
 
-A responsive, browser-based prototype covering the Faster Meet customer workspace and administration console. This is a client demonstration with local sample data. It does not connect to the production Laravel API or process real meetings, emails, payments, or recordings.
+This responsive, static demonstration contains a customer workspace and an admin console. Open the link, select **Admin console → Enter admin demo** or **Enter customer demo**. The sample workspace is stored in your browser; **Settings → Reset sample data** restores it. No production Laravel API or vendor service is contacted.
 
-## Open the prototype
+## Source alignment
 
-- Open the root `index.html` for the self-contained version, or serve the `dist/` folder using any static web server.
-- Select **Enter customer demo** or choose **Admin console → Enter admin demo**.
-- Switch roles in **Settings**. **Reset sample data** restores the initial workspace.
-- Demo form credentials: customer `alex@example.com`, admin `admin@fastermeet.demo`; password for both: `FasterMeet2026!`. These are public sample credentials, not production secrets.
-- Registration and password recovery show demonstration flows. They do not create real identities or send email. Do not enter personal passwords into the demo.
+The admin sections were mapped against the user-supplied `app.fastermeet.com-develop.zip` frontend source, especially `config/routes.ts`, active `src/pages` forms and TypeScript data contracts. The ZIP is an Ant Design Pro / Umi frontend, not the Laravel backend. Generic Ant Design template pages and scaffold API examples are excluded. The interface retains Allam Solutions' client-preview design while reflecting the source's concrete entities and relationships.
 
-The app uses localStorage for the workspace and sessionStorage for the active demo role. Each browser/device has independent data. Shared links resolve sample records present in the receiving browser; they do not synchronize data. The root deployment URL can be shared once hosting is available.
-
-## Included journeys
-
-| Area | Interactive behavior |
+| Admin area | Interactive records and relationships |
 |---|---|
-| Identity | Customer/admin login, registration, verification preview, password recovery preview, sign out |
-| Workspace | Dashboard metrics derived from local records, activity feed, notifications, global search |
-| Meetings | Create, edit, cancel, restore; scheduled/fixed meetings and webinars; guest/cohost email fields; recording preference |
-| Host allocation | Multiple Zoom master accounts, automatic allocation and overlapping-session rejection |
-| Calendar | Month navigation, today, day filtering, event details, downloadable calendar invites |
-| Meeting room | Join link/ID, lobby, simulated devices, two-participant room, chat, leave/end session |
-| Recordings | Library/search, generated playable sample video, sample download, share link, archive and retention controls |
-| Teams | Invite/edit/remove sample members, role/team choices, channel chat with browser persistence |
-| Subscription | Three sample plans, upgrade/downgrade, simulated successful/failed checkout, add-ons, renewal preferences |
-| Billing | New invoices on successful demo checkout, invoice preview, print/Save PDF, CSV export |
-| Admin | Customer CRUD, subscription status/plan management, customer/team/meeting/recording reports |
-| Reports | Six views: subscriptions, revenue, meetings, recordings, customers, teams; CSV export |
-| Integrations | Zoom/S3/Vimeo/Moodle/payment configuration previews, add demo master accounts, simulate recording webhook |
-| Learning | Map existing demo courses to scheduled meeting/webinar sessions |
-| Preferences | Profile/company, individual/business type, timezone, email/reminder preferences |
+| Customers | Contact user, customer type, names, company/display name, address, email and phones |
+| Products | Product name and description; grouped plans, add-ons and billing cycles |
+| Plans | Product, hosting capacity, billing cycle, customer type, pooled/dedicated assignment, account limit, price and active state |
+| Add-ons | Product, storage size in MB and price |
+| Subscriptions | Customer → plan, dates, status and auto-renew |
+| Events | Subscription → event, fixed/scheduled type, dates, status and demo UUID |
+| Video hosting | Platform → account type → capacity → hosting account; parent, assignment, usage, concurrency and status |
+| System users | Name, email, role and a password-shaped demo field that is discarded immediately |
 
-Subscription catalog prices are illustrative product pricing. They are unrelated to the separately agreed development quotation of EGP 265,000 over two calendar months.
+Each admin collection supports list, search, view, create, edit and delete. Deletion is blocked while other demo records reference an item. The public demo never stores hosting credentials, passwords or real customer data.
 
-## Files
+The customer experience includes sample login/registration/recovery views, dashboard, meeting scheduling, calendar, lobby/room simulation, recording previews, team chat, subscription checkout simulation, invoices, reports, settings and integration previews. These are illustrative client journeys beyond the active admin routes in the ZIP. Demo product prices are unrelated to the separately agreed **EGP 265,000 / two calendar months** development quotation.
 
-- `dist/`: deployable static website; `index.html` must be at the website document root.
-- Root `index.html`: standalone portable demo, with CSS and JS embedded; generated by `npm run build`.
-- `scripts/check.mjs`: syntax and static-link checks.
-- `.github/workflows/prototype-checks.yml`: checks and deployable artifact packaging.
-- `.github/workflows/deploy-pages.yml`: builds and publishes `dist/` to GitHub Pages on pushes to `main` and on manual runs.
-- `docs/STATUS.md`: verified access limitations and implementation boundary.
-- `docs/QA.md`: actual test results and remaining limits.
-- `docs/HANDOVER.md`: demo script and development handover checklist.
+## Run and verify
 
-## Checks
+The root `index.html` is a standalone generated page for GitHub Pages. You can also serve `dist/` from any static server. Run `npm run build` to regenerate the root file and `npm run check` for syntax and static references. No npm dependencies are required. The Pages workflow deploys the generated page on changes to the application files.
 
-Run `node scripts/check.mjs` or `npm run build`. No npm dependencies or installation are required. Fonts are optional Google Fonts; the interface falls back to system fonts when offline.
-
-## GitHub Pages deployment
-
-Requested repository: https://github.com/allamsolutions/app.fastermeet.com/tree/develop
-
-The GitHub connection could not access this repository or its `develop` README (404). The connected account is ROJIERAMY, and the listed GitHub App installation covers that account, not the allamsolutions organization. Existing source was not cloned, changed, or audited. Repository access must be granted by an authorized organization administrator before this project can be integrated into that repository.
-
-The standalone prototype is in the public repository [ROJIERAMY/fastermeet-prototype](https://github.com/ROJIERAMY/fastermeet-prototype) and is live at **https://rojieramy.github.io/fastermeet-prototype/**. The GitHub Pages workflow builds the standalone HTML and publishes it on pushes to `main` that affect app files. The live login, customer dashboard, and admin dashboard were verified in a browser after the deployment succeeded.
-
-No production backend, hosting resources, DNS, or credentials were changed. See `docs/STATUS.md` for implementation boundaries. The original allamsolutions repository remains inaccessible and its source was not audited.
-
-## Deployment package
-
-The `dist/` folder contains `index.html`, `style.css`, and `app.js`. It is the static deployable output; the root `index.html` is also independently deployable. Use a separate prototype website/subdomain so the existing application is preserved. The exact Hostinger account, document root, target domain, and Git deployment capability must be read from the authenticated hosting account before configuring deployment. Do not guess these settings or commit credentials.
-
-The package deliberately contains no fabricated deployment keys, API URLs requiring credentials, or production tokens. The project is not a production authentication, permission, payment or conferencing system. Backend integration, authorization enforcement, webhooks, uploads, email delivery, load/security testing, migrations and real vendor authorization remain development work.
+`docs/SOURCE_MAPPING.md` records the ZIP review, `docs/QA.md` records tested flows, and `docs/STATUS.md` explains production boundaries. No `.env` file or secret from the ZIP is included in this repository.
