@@ -32,12 +32,14 @@ jobs:
           node-version: "22"
       - name: Verify and build prototype
         run: npm run build
+      - name: Prepare self-contained website
+        run: mkdir -p site && cp index.html site/index.html
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
