@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+Hostinger_Static_Bundle.zip
+Faster_Meet_Prototype.html
