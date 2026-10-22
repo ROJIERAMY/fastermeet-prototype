@@ -57,9 +57,7 @@ Requested repository: https://github.com/allamsolutions/app.fastermeet.com/tree/
 
 The GitHub connection could not access this repository or its `develop` README (404). The connected account is ROJIERAMY, and the listed GitHub App installation covers that account, not the allamsolutions organization. Existing source was not cloned, changed, or audited. Repository access must be granted by an authorized organization administrator before this project can be integrated into that repository.
 
-The standalone prototype is in the public repository [ROJIERAMY/fastermeet-prototype](https://github.com/ROJIERAMY/fastermeet-prototype). The Pages deployment workflow is committed on `main`. Its build step passed, but the deployment run failed at **Configure Pages** because the repository's Pages site is not enabled yet. This is a repository setting, not an application build failure.
-
-Open **Settings → Pages** in the repository and choose **GitHub Actions** under **Build and deployment → Source**. Then run **Actions → Deploy Faster Meet demo to GitHub Pages → Run workflow**. The expected project URL, only after a successful deployment, is `https://rojieramy.github.io/fastermeet-prototype/`. Check the workflow run and live URL before sharing it with a client.
+The standalone prototype is in the public repository [ROJIERAMY/fastermeet-prototype](https://github.com/ROJIERAMY/fastermeet-prototype) and is live at **https://rojieramy.github.io/fastermeet-prototype/**. The GitHub Pages workflow builds the standalone HTML and publishes it on pushes to `main` that affect app files. The live login, customer dashboard, and admin dashboard were verified in a browser after the deployment succeeded.
 
 No production backend, hosting resources, DNS, or credentials were changed. See `docs/STATUS.md` for implementation boundaries. The original allamsolutions repository remains inaccessible and its source was not audited.
 
