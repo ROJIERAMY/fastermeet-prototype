@@ -62,3 +62,5 @@
 - Published browser walkthrough: the helper collected a title, day and time in three Arabic messages; Review opened the matching 30-minute form; Save added the event and returned a chat confirmation with a working details action.
 - Preserved team, guests and recording preference in the shared event adapter; cross-midnight duration is calculated from full timestamps. These are checked by the assistant regression script.
 - Added `qa/mobile.html` to the Pages artifact so the real app can be inspected in a 390 × 844 iframe without changing the normal customer flow.
+- Mobile iframe browser QA: the assistant panel measured 390 px wide with no document horizontal overflow; input text was 16 px. Arabic scheduling, the review form, saving, and the confirmation/details action worked at that width. Details retained Design team, the sample guest and Recording enabled. This does not emulate a physical phone keyboard.
+- Latest published admin overview showed the newly created mobile event under Acme Studio / Business. Both GitHub Actions checks and the Pages deployment completed successfully for commit `7716f117`.
