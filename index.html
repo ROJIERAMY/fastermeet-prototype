@@ -329,8 +329,8 @@ function scheduleSuggestion(raw,followup=false){
  if(duration<15||duration>480)return {text:'Choose a duration between 15 and 480 minutes. اختار مدة من ١٥ إلى ٤٨٠ دقيقة.'};
  const email=[...ascii.matchAll(/[\w.+-]+@[\w.-]+\.[a-z]{2,}/gi)].map(x=>x[0]).slice(0,5).join(',');
  const type=/webinar|ويبنار/.test(q)?'Webinar':/meeting|اجتماع/.test(q)?'Meeting':previous.type||'Meeting';
- const titleMatch=ascii.match(/["“«]([^"”»]{1,120})["”»]|(?:called|بعنوان)\s+(.{1,120})/i);
- const title=titleMatch?.[1]||titleMatch?.[2]||previous.title||(type==='Webinar'?'New webinar':'New meeting');
+ const titleMatch=ascii.match(/["“«]([^"”»]{1,120})["”»]/)||ascii.match(/(?:called|بعنوان)\s+(.{1,120})/i);
+ const title=(titleMatch?.[1]||titleMatch?.[2]||previous.title||(type==='Webinar'?'New webinar':'New meeting')).trim().replace(/^["“«]|["”»]$/g,'');
  day=day||previous.date;time=time||previous.time;
  assistantScheduleIntent={date:day,time,duration,type,title,guests:email||previous.guests||''};
  if(!day||!time)return {text:/[\u0600-\u06ff]/.test(raw)?(!day&&!time?'تحب الاجتماع يوم إيه والساعة كام؟ ممكن ترد في رسالة تانية، مثل: بكرة الساعة ١١ صباحًا.':!day?'حفظت الساعة. تحب الاجتماع يوم إيه؟':'حفظت اليوم. الساعة كام؟ مثل: الساعة ١١ صباحًا.') :(!day&&!time?'What day and time works for you? You can reply in another message, for example: tomorrow at 11 am.':!day?'I have the time. Which day should I use?':'I have the day. What time should I use? For example: at 11 am.')};

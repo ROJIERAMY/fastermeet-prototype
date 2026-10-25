@@ -19,7 +19,9 @@ const ask=(text,followup=false)=>vm.runInContext(`scheduleSuggestion(${JSON.stri
 const draft=result=>vm.runInContext(`assistantDrafts.get(${JSON.stringify(result.draft)})`,context);
 
 assert.match(ask('احجز اجتماع بكرة').text,/الساعة كام/);
+ask('احجز اجتماع بعنوان "Client demo" بكرة');
 let proposed=draft(ask('الساعة ١١ صباحًا لمدة ٣٠ دقيقة',true));
+assert.equal(proposed.title,'Client demo');
 assert.equal(proposed.date,'2026-10-26');
 assert.equal(proposed.time,'11:00');
 assert.equal(proposed.duration,30);
