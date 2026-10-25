@@ -13,3 +13,9 @@
 - The student helper answered a progress question using the current count and its action opened Learning. An Arabic progress question produced an Arabic response.
 - Switching to Admin changed the assistant context and quick prompts. Its pending subscription insight counted one fictional record and offered navigation to Subscriptions.
 - Visual review covered the desktop assistant panel; mobile layout has responsive CSS but still needs physical-device review. No external model or Laravel integration was exercised.
+
+## Scope allocation extension — 25 October 2026
+
+- Admin login displayed the new Scope & budget navigation. The table showed 11 workstreams, the Laravel/backend and production AI rows, each price beside its feature, the EGP 265,000 total and an export control. Desktop layout was visually checked after allowing wrapped table cells. The student workstream link opened the student Learning view.
+- The login screen displayed only Student and Admin choices. Customer records remain in Admin → Customers.
+- The budget page is an internal allocation, with recurring vendor charges explicitly separated from the fixed professional-services quotation.

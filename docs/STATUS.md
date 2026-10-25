@@ -10,3 +10,8 @@
 
 - A student demonstration role and a role-aware guided assistant are implemented in the static prototype. The student courses are fictional examples, not imported Moodle data.
 - English and Arabic guided answers derive from browser-local sample records. No model endpoint, tool execution, backend RBAC or persistence exists. Production AI integration is specified separately in `AI_HELPER.md`.
+
+## Scope clarification — 25 October 2026
+
+- The earlier speculative customer-facing workspace has been removed from the demo navigation/login. Admin customer records remain because the source associates them with subscriptions and events.
+- Admin → Scope & budget allocates the full EGP 265,000 across 11 workstreams, including backend, AI implementation, QA and launch. This is an internal discussion view and does not add to the signed quotation. Vendor recurring charges are separate, subject to actual provider selection and usage.

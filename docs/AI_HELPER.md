@@ -2,7 +2,7 @@
 
 ## What the public preview demonstrates
 
-- Floating assistant in customer, student and admin roles, plus a dedicated helper page.
+- Floating assistant in student and admin roles, plus a dedicated helper page.
 - Guided answers to English/Arabic questions, based on current fictional browser data.
 - Student: next lesson, completed count, live session, recordings, joining and certificate boundary.
 - Admin: pending subscriptions, hosting utilization, scheduled events, catalog counts, customers and reports.
