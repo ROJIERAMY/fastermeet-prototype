@@ -9,6 +9,9 @@
 - Contextual action buttons navigate to the relevant page. Customer meeting and subscription previews inform the guided answers.
 - English/Arabic meeting requests can include tomorrow/today, weekdays or an ISO date, a time and optional duration. The planner checks sample host conflicts and suggests a later available slot on the same date. A proposed meeting opens the existing form prefilled for explicit review and save. No real invitation is sent.
 - Session-only conversation; no chat data is written to the application database or sent to an external API. No AI model is currently invoked.
+- Scheduling can span several messages (for example, “Book a meeting”, “tomorrow”, then “at 11 am for 30 minutes”). Follow-ups can change the time without losing the selected day. Quoted titles and guest emails can be carried into the review form.
+- Saving a booking reviewed from the helper returns a confirmation in the chat with a meeting-details/link action. Host availability is checked against all demo customers sharing that account. Conversation context resets when the selected customer or role changes.
+- The floating dialog supports keyboard focus containment, Escape to close, Arabic text direction and a mobile bottom sheet with 16 px input text to avoid iOS focus zoom.
 
 ## Production implementation
 

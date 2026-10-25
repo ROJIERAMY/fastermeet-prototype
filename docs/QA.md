@@ -53,3 +53,9 @@
 - Published desktop browser showed the fixed Ask AI pill and conversation panel. The English quick prompt proposed 26 October at 11:00 with the matching meeting host; Review proposed meeting opened a form prefilled with date, time, duration and host.
 - Arabic quick prompt also proposed the requested 11:00 slot. A parsing correction prevents «الساعة» from implying a 60-minute duration and keeps ISO date digits out of the time parser.
 - Responsive bottom-sheet CSS is included for widths up to 650 px and uses safe-area padding. A real phone viewport was not available in the browser QA environment.
+
+## Continued scheduling and responsive helper — 25 October 2026
+
+- Added multi-message scheduling context, quoted titles, a booking-saved chat confirmation and a direct meeting-details action. Customer changes reset chat context and draft records.
+- `scripts/check-assistant.mjs` verifies Arabic day/time follow-ups, duration preservation, ISO-date time parsing, active-subscription checks and host collisions from other customers. Included in `npm run check`.
+- Fixed helper focus handling and Escape to close; mobile input uses 16 px text and the conversation scroll area can shrink when the available viewport height is reduced.
