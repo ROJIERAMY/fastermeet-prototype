@@ -5,3 +5,8 @@
 - The archive does not contain Laravel backend source. It cannot establish API completeness or the state of live integrations. The provided backend URL exposed a default Laravel welcome page in the earlier review, which likewise does not establish endpoint behavior.
 - The prototype is browser-local. Account login, email, conferencing, payments, storage, webhooks and hosting credentials are simulations. External services, persistent permissions and production security are implementation work, not acceptance results from this preview.
 - The development quotation remains EGP 265,000 over two calendar months; illustrative customer plan prices in the demo are separate.
+
+## AI helper extension — 25 October 2026
+
+- A student demonstration role and a role-aware guided assistant are implemented in the static prototype. The student courses are fictional examples, not imported Moodle data.
+- English and Arabic guided answers derive from browser-local sample records. No model endpoint, tool execution, backend RBAC or persistence exists. Production AI integration is specified separately in `AI_HELPER.md`.

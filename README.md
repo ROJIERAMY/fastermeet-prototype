@@ -2,7 +2,7 @@
 
 Prepared by **Allam Solutions** · 22 October 2026. [Open the live GitHub Pages preview](https://rojieramy.github.io/fastermeet-prototype/).
 
-This responsive, static demonstration contains a customer workspace and an admin console. Open the link, select **Admin console → Enter admin demo** or **Enter customer demo**. The sample workspace is stored in your browser; **Settings → Reset sample data** restores it. No production Laravel API or vendor service is contacted.
+This responsive, static demonstration contains a customer workspace, student learning space and an admin console. Open the link, select **Admin console → Enter admin demo**, **Student space → Enter student demo**, or **Enter customer demo**. The sample workspace is stored in your browser; **Settings → Reset sample data** restores it. No production Laravel API or vendor service is contacted.
 
 ## Source alignment
 
@@ -22,6 +22,12 @@ The admin sections were mapped against the user-supplied `app.fastermeet.com-dev
 Each admin collection supports list, search, view, create, edit and delete. Deletion is blocked while other demo records reference an item. The public demo never stores hosting credentials, passwords or real customer data.
 
 The customer experience includes sample login/registration/recovery views, dashboard, meeting scheduling, calendar, lobby/room simulation, recording previews, team chat, subscription checkout simulation, invoices, reports, settings and integration previews. These are illustrative client journeys beyond the active admin routes in the ZIP. Demo product prices are unrelated to the separately agreed **EGP 265,000 / two calendar months** development quotation.
+
+## Student and AI helper preview
+
+The new Student space includes fictional courses, short lessons, progress tracking and links to sample live sessions. A floating **Ask AI** button and a dedicated **AI helper** page are available in all roles. The guided assistant answers English or Arabic questions using current demo data, suggests next steps and opens relevant pages. Student prompts cover lessons, progress, sessions and recordings; admin prompts cover subscriptions, hosting usage, events, catalog, customers and reports. Its chat history is kept only in the current tab; lesson progress is browser-local.
+
+**This is an AI experience prototype, not a live language model.** Responses use deterministic rules and fictional records; no prompts are sent to a vendor. The ZIP did not contain student routes or an AI endpoint, so these are proposed additions. See `docs/AI_HELPER.md` for the secure backend integration plan.
 
 ## Run and verify
 
