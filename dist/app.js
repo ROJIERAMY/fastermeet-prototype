@@ -265,13 +265,12 @@ function scheduleSuggestion(raw){
  if(iso){const d=new Date(iso[0]+'T12:00:00');if(!Number.isNaN(d.getTime())&&dateISO(d)===iso[0])day=iso[0]}
  if(!day){if(/tomorrow|بكره|غدا|بكرة/.test(q))day=addDays(1);else if(/today|النهارده|اليوم/.test(q))day=today}
  if(!day){const days=[['sunday','الاحد'],['monday','الاثنين','الاتنين'],['tuesday','الثلاثاء'],['wednesday','الاربعاء'],['thursday','الخميس'],['friday','الجمعة'],['saturday','السبت']];const i=days.findIndex(names=>names.some(n=>q.includes(n)));if(i>=0){let offset=(i-now.getDay()+7)%7;if(!offset)offset=7;day=addDays(offset)}}
- const explicitTime=q.match(/(?:\b(?:at|الساعة|ساعه)\s*)?(\d{1,2})(?::(\d\d))\s*(am|pm|صباحا|صباحًا|مساء|مساءً|م)?/);
- const hourTime=q.match(/(?:\bat\s+|الساعة\s*|ساعه\s*)(\d{1,2})\s*(am|pm|صباحا|صباحًا|مساء|مساءً|م)?/);
+ const timeText=iso?q.replace(iso[0],''):q;
+ const explicitTime=timeText.match(/(?:\b(?:at|الساعة|ساعه)\s*)?(\d{1,2}):(\d\d)\s*(am|pm|صباحا|صباحًا|مساء|مساءً|م)?/);
+ const hourTime=timeText.match(/(?:\bat\s+|الساعة\s*|ساعه\s*)(\d{1,2})\s*(am|pm|صباحا|صباحًا|مساء|مساءً|م)?/);
  const mt=explicitTime||hourTime;let time=null;
  if(mt){let h=Number(mt[1]),min=explicitTime?Number(mt[2]):0,mark=(explicitTime?mt[3]:mt[2])||'';if(h<=23&&min<60){if(/pm|مساء|^م$/.test(mark)&&h<12)h+=12;if(/am|صباح/.test(mark)&&h===12)h=0;time=String(h).padStart(2,'0')+':'+String(min).padStart(2,'0')}}
- // An ISO date alone must not be mistaken for a time.
- if(iso&&mt&&mt.index>=q.indexOf(iso[0])&&mt.index<q.indexOf(iso[0])+iso[0].length)time=null;
- const dm=q.match(/(\d{1,3})\s*(?:min(?:utes?)?|دقيق[ةه]|دقايق)/);let duration=dm?Number(dm[1]):/(?:نص ساعة|نصف ساعة)/.test(q)?30:/(?:ساعة|ساعه|one hour|1 hour)/.test(q)?60:45;
+ const dm=q.match(/(\d{1,3})\s*(?:min(?:utes?)?|دقيق[ةه]|دقايق)/);let duration=dm?Number(dm[1]):/(?:نص ساعة|نصف ساعة)/.test(q)?30:/(?:لمدة\s*(?:ساعة|ساعه)|\b(?:one hour|1 hour)\b)/.test(q)?60:45;
  if(duration<15||duration>480)duration=45;
  const email=[...ascii.matchAll(/[\w.+-]+@[\w.-]+\.[a-z]{2,}/gi)].map(x=>x[0]).slice(0,5).join(',');
  const type=/webinar|ويبنار/.test(q)?'Webinar':'Meeting';

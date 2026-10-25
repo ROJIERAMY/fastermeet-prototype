@@ -50,4 +50,6 @@
 - Restored missing base styles for the floating launcher, conversation panel, quick prompts and mobile bottom sheet. The previous stylesheet contained only the mobile override and palette, which left the assistant out of the expected floating position.
 - Customer scheduling suggestions use the linked active subscription, matching host capacity and a free slot, then open a prefilled review form. Admin schedule requests direct the operator to choose a customer or use Events, rather than silently using another customer's plan.
 - Corrected customer team and subscription responses to use the selected customer records. Model API integration remains a production task; this static preview's guided replies are deterministic.
-- `npm run build` and `npm run check` passed. Browser confirmation on the published desktop and mobile view follows deployment.
+- Published desktop browser showed the fixed Ask AI pill and conversation panel. The English quick prompt proposed 26 October at 11:00 with the matching meeting host; Review proposed meeting opened a form prefilled with date, time, duration and host.
+- Arabic quick prompt also proposed the requested 11:00 slot. A parsing correction prevents «الساعة» from implying a 60-minute duration and keeps ISO date digits out of the time parser.
+- Responsive bottom-sheet CSS is included for widths up to 650 px and uses safe-area padding. A real phone viewport was not available in the browser QA environment.
