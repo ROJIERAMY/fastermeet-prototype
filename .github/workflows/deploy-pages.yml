@@ -6,6 +6,7 @@ on:
     paths:
       - "dist/**"
       - "scripts/**"
+      - "qa/**"
       - "package.json"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
@@ -31,9 +32,12 @@ jobs:
         with:
           node-version: "22"
       - name: Verify and build prototype
-        run: npm run build
+        run: npm run check && npm run build
       - name: Prepare self-contained website
-        run: mkdir -p site && cp index.html site/index.html
+        run: |
+          mkdir -p site/qa
+          cp index.html site/index.html
+          cp qa/mobile.html site/qa/mobile.html
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static website

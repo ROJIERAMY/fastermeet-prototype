@@ -59,3 +59,6 @@
 - Added multi-message scheduling context, quoted titles, a booking-saved chat confirmation and a direct meeting-details action. Customer changes reset chat context and draft records.
 - `scripts/check-assistant.mjs` verifies Arabic day/time follow-ups, duration preservation, ISO-date time parsing, active-subscription checks and host collisions from other customers. Included in `npm run check`.
 - Fixed helper focus handling and Escape to close; mobile input uses 16 px text and the conversation scroll area can shrink when the available viewport height is reduced.
+- Published browser walkthrough: the helper collected a title, day and time in three Arabic messages; Review opened the matching 30-minute form; Save added the event and returned a chat confirmation with a working details action.
+- Preserved team, guests and recording preference in the shared event adapter; cross-midnight duration is calculated from full timestamps. These are checked by the assistant regression script.
+- Added `qa/mobile.html` to the Pages artifact so the real app can be inspected in a 390 × 844 iframe without changing the normal customer flow.
