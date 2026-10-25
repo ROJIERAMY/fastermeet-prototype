@@ -9,5 +9,5 @@
 ## Customer Workspace and AI helper — 25 October 2026
 
 - Customer Workspace has been restored as the customer-facing demonstration role: dashboard, meetings, calendar, recordings, team, subscription, settings and an AI helper. Student navigation, lessons and progress were removed from the preview.
-- Guided English/Arabic assistant answers use browser-local sample data. No live model, Laravel endpoint or production permissions are connected.
+- Guided English/Arabic assistant answers and meeting suggestions use browser-local sample data. Proposed meetings require review and saving through the existing form. No live model, Laravel endpoint or production permissions are connected.
 - Admin → Scope & budget allocates EGP 265,000 across 11 workstreams, including EGP 23,000 for Customer Workspace, backend, AI implementation, QA and launch. Recurring vendor charges remain separate.

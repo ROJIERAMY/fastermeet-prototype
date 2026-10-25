@@ -12,3 +12,9 @@
 - Customer journeys include dashboard, meetings, calendar, recordings, team, subscription and a role-aware guided AI helper. The public prototype still uses fictional local records; Laravel and vendors remain unverified.
 - The 11 budget rows total EGP 265,000; Customer Workspace is allocated EGP 23,000 within that total. Admin can open its Subscription view from the budget table.
 - Build, static references and browser walkthrough should be checked after publication.
+
+## Scheduling helper — 25 October 2026
+
+- Local browser: an English request for tomorrow at 11 am returned an available 45-minute slot; Review proposed meeting opened the schedule form with date, time, duration and host prefilled.
+- Arabic numerals and wording (`احجز اجتماع بكرة الساعة ١١ صباحًا لمدة ٣٠ دقيقة`) returned an 11:00, 30-minute proposal.
+- The planner checks overlap against browser-local scheduled meetings and the form rechecks availability before saving. Real invitations, Zoom links, and LLM responses are still outside this static preview.

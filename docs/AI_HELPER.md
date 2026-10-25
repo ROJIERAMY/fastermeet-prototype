@@ -7,6 +7,7 @@
 - Customer: upcoming meetings, recordings, team members and subscription plans.
 - Admin: pending subscriptions, hosting utilization, scheduled events, catalog counts, customers and reports.
 - Contextual action buttons navigate to the relevant page. Customer meeting and subscription previews inform the guided answers.
+- English/Arabic meeting requests can include tomorrow/today, weekdays or an ISO date, a time and optional duration. The planner checks sample host conflicts and suggests a later available slot on the same date. A proposed meeting opens the existing form prefilled for explicit review and save. No real invitation is sent.
 - Session-only conversation; no chat data is written to the application database or sent to an external API. No AI model is currently invoked.
 
 ## Production implementation
