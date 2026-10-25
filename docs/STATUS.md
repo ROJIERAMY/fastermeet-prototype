@@ -17,3 +17,8 @@
 - The supplied three-page New Vision PDF distinguishes Individual and Business workspace plans from Zoom capacity and duration packages. Customer → Subscription now presents an interactive four-step configuration and Admin → Products → Plans shows the mapping.
 - Meeting capacities: 100, 300, 500, 1,000. Webinar capacities: 500, 1,000, 3,000, 5,000, 10,000. Terms: hour bundle (100 hours mentioned), day, week, month, year and combined duration. Trial: 10 hours.
 - The document explicitly leaves business rules and package pricing pending from Amr. Existing admin catalog EGP values are labeled illustrative legacy records; the new configuration calculates no price or charge.
+
+## Live admin comparison — 25 October 2026
+
+- Authenticated read-only review of Subscription items confirmed the blue Faster Meet palette and distinct orange Add Plan, blue Add Addon and green Add Billing Cycle actions. The source currently contains only sparse sample catalog records.
+- The prototype’s Admin → Products now uses clearer selectable product cards, linked plan/add-on cards, status, capacity, cycle and sample EGP labels. Individual/Business mapping remains separate from unapproved package pricing. The customer package configurator has four interactive steps and a guided recommendation form.

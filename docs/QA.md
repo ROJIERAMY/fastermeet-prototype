@@ -28,3 +28,10 @@
 
 - Admin → Products defaults to Subscription items with product cards, linked plan/add-on counts and a product detail panel. Selecting Faster Meet showed two sample plans and one add-on.
 - Add plan after product selection prefilled the Product field. Capacity options were expanded to all New Vision Meeting and Webinar sizes; billing cycles include 100-hour bundle, day, week, month and year.
+
+## Authenticated admin comparison and catalog refresh — 25 October 2026
+
+- Read-only inspection of the live `/products/subscription-items` screen confirmed its product/detail hierarchy, plan metadata and the three create forms. No records were submitted to the live admin.
+- Local prototype: selected Faster Meet showed two illustrative plan cards; Add plan preselected the product and exposed the expanded capacities, billing cycles, customer types, assignment and EGP fields. The Add-ons tab displayed linked storage, and View plan mapping opened the Individual/Business table.
+- Customer package advisor: 750 webinar attendees plus team collaboration recommended Business / Webinar / 1,000 / Month. This is deterministic browser-local logic; it is not a production AI or approved commercial offer.
+- `npm run build` and `npm run check` passed after the redesign.
