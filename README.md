@@ -34,3 +34,9 @@ The Customer Workspace includes a dashboard, meeting scheduling and joining, cal
 The root `index.html` is a standalone generated page for GitHub Pages. You can also serve `dist/` from any static server. Run `npm run build` to regenerate the root file and `npm run check` for syntax and static references. No npm dependencies are required. The Pages workflow deploys the generated page on changes to the application files.
 
 `docs/SCOPE_BUDGET.md` records the complete project allocation, `docs/SOURCE_MAPPING.md` records the ZIP review, `docs/QA.md` records tested flows, and `docs/STATUS.md` explains production boundaries. No `.env` file or secret from the ZIP is included in this repository.
+
+## Connected workflow demonstration
+
+Use **Admin console → Customers → Preview workspace** to view a particular customer's linked subscription and events. Admin changes to subscriptions, plans, event status and hosting account availability affect that customer preview in the same browser. A customer can schedule an eligible event; it appears under Admin → Events. **Join · copy link** creates a portable demo invitation that can be pasted into another browser. The link contains a public title, date, time and format, and opens a silent preview after choosing a demo role. It is not a live Zoom join URL or a replacement for server-side permissions.
+
+The authenticated source admin was inspected read-only on 25 October 2026 across its top-level modules. Its dashboard contains template content, and its catalog is sparse sample data; the client prototype presents a coherent intended flow without claiming the live backend is complete.

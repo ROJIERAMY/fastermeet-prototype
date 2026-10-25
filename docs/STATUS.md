@@ -22,3 +22,9 @@
 
 - Authenticated read-only review of Subscription items confirmed the blue Faster Meet palette and distinct orange Add Plan, blue Add Addon and green Add Billing Cycle actions. The source currently contains only sparse sample catalog records.
 - The prototype’s Admin → Products now uses clearer selectable product cards, linked plan/add-on cards, status, capacity, cycle and sample EGP labels. Individual/Business mapping remains separate from unapproved package pricing. The customer package configurator has four interactive steps and a guided recommendation form.
+
+## Connected admin and customer preview — 25 October 2026
+
+- Admin Overview metrics now derive from sample customers, subscriptions, events and hosting accounts rather than placeholder revenue figures. Admin list views expose source-like columns and relationships across all reviewed modules.
+- Admin can preview a selected customer. The customer sees the matching subscription and events from the same browser-local records. A customer-created event is saved to Admin → Events, with plan type, subscription period, active host and conflict checks.
+- Join displays a copyable portable demo invitation. Opening it in another browser shows a silent invitation preview; no microphone, camera, speaker, live Zoom meeting or actual Zoom URL is started. Production conferencing requires Laravel and Zoom provisioning and a secure join URL.
