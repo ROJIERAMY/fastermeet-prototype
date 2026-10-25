@@ -2,7 +2,7 @@
 
 Prepared by **Allam Solutions** · 22 October 2026. [Open the live GitHub Pages preview](https://rojieramy.github.io/fastermeet-prototype/).
 
-This responsive, static demonstration contains a student learning space and an admin console. Open the link, select **Admin console → Enter admin demo** or **Student space → Enter student demo**. The sample workspace is stored in your browser; **Settings → Reset sample data** restores it. No production Laravel API or vendor service is contacted.
+This responsive, static demonstration contains a Customer Workspace and an admin console. Open the link, select **Admin console → Enter admin demo** or **Customer workspace → Enter customer demo**. The sample workspace is stored in your browser; **Settings → Reset sample data** restores it. No production Laravel API or vendor service is contacted.
 
 ## Source alignment
 
@@ -21,13 +21,13 @@ The admin sections were mapped against the user-supplied `app.fastermeet.com-dev
 
 Each admin collection supports list, search, view, create, edit and delete. Deletion is blocked while other demo records reference an item. The public demo never stores hosting credentials, passwords or real customer data.
 
-The prototype has sample meeting, calendar, room, recording, team, reporting and integration previews. Customer records remain an admin entity linked to subscriptions and events; there is no separate customer-facing workspace. The full workstream allocation of the agreed **EGP 265,000 / two calendar months** development quotation is available in Admin → Scope & budget and `docs/SCOPE_BUDGET.md`. Sample product-plan prices are unrelated to that project quotation.
+The prototype has sample meeting, calendar, room, recording, team, reporting and integration previews. Customer records remain an admin entity linked to subscriptions and events. The Customer Workspace demonstrates a customer-facing view of meetings, calendar, recordings, team and subscription. The full workstream allocation of the agreed **EGP 265,000 / two calendar months** development quotation is available in Admin → Scope & budget and `docs/SCOPE_BUDGET.md`. Sample product-plan prices are unrelated to that project quotation.
 
-## Student and AI helper preview
+## Customer Workspace and AI helper preview
 
-The new Student space includes fictional courses, short lessons, progress tracking and links to sample live sessions. A floating **Ask AI** button and a dedicated **AI helper** page are available in student and admin roles. The guided assistant answers English or Arabic questions using current demo data, suggests next steps and opens relevant pages. Student prompts cover lessons, progress, sessions and recordings; admin prompts cover subscriptions, hosting usage, events, catalog, customers and reports. Its chat history is kept only in the current tab; lesson progress is browser-local.
+The Customer Workspace includes a dashboard, meeting scheduling and joining, calendar, recordings, team collaboration, subscription plans, sample invoices, settings and a guided AI helper. The admin console manages customer records, products, subscriptions, events and hosting. The helper answers English and Arabic questions from fictional browser data and links to relevant pages. Customer prompts cover meetings, recordings, team and plans; admin prompts cover subscriptions, hosting, events and catalog. Chat history lasts for the current tab only.
 
-**This is an AI experience prototype, not a live language model.** Responses use deterministic rules and fictional records; no prompts are sent to a vendor. The ZIP did not contain student routes or an AI endpoint, so these are proposed additions. See `docs/AI_HELPER.md` for the secure backend integration plan.
+**This is an AI experience prototype, not a live language model.** Responses follow deterministic rules; no prompts are sent to a vendor. The customer-facing screens are a proposed presentation layer, while the reviewed ZIP contains admin customer records. The ZIP contains no Laravel backend or AI endpoint. See `docs/AI_HELPER.md` for the production integration plan.
 
 ## Run and verify
 

@@ -6,16 +6,9 @@
 - The forms support linked selectors, required fields, scheduled-time and usage validation, detail views, edits and guarded deletes. Longer scenario coverage should be repeated during backend integration. The earlier browser QA of customer journeys is summarized in the development history; it did not exercise a real API.
 - No real Laravel endpoints, Zoom, S3, Vimeo, Moodle, payment gateway, email delivery or hosting credentials were tested. Static preview behavior is not production acceptance evidence.
 
-## Student and helper extension — 25 October 2026
+## Customer Workspace restoration — 25 October 2026
 
-- `npm run build` passed with embedded-script integrity verification.
-- In the local Chrome preview, Student space opened a dedicated dashboard and Learning page. A lesson completion changed the course from 33% to 67%; reload preserved the sample progress.
-- The student helper answered a progress question using the current count and its action opened Learning. An Arabic progress question produced an Arabic response.
-- Switching to Admin changed the assistant context and quick prompts. Its pending subscription insight counted one fictional record and offered navigation to Subscriptions.
-- Visual review covered the desktop assistant panel; mobile layout has responsive CSS but still needs physical-device review. No external model or Laravel integration was exercised.
-
-## Scope allocation extension — 25 October 2026
-
-- Admin login displayed the new Scope & budget navigation. The table showed 11 workstreams, the Laravel/backend and production AI rows, each price beside its feature, the EGP 265,000 total and an export control. Desktop layout was visually checked after allowing wrapped table cells. The student workstream link opened the student Learning view.
-- The login screen displayed only Student and Admin choices. Customer records remain in Admin → Customers.
-- The budget page is an internal allocation, with recurring vendor charges explicitly separated from the fixed professional-services quotation.
+- Login, role switching and the budget allocation were updated for Customer Workspace and Admin. Student navigation and learning content were removed.
+- Customer journeys include dashboard, meetings, calendar, recordings, team, subscription and a role-aware guided AI helper. The public prototype still uses fictional local records; Laravel and vendors remain unverified.
+- The 11 budget rows total EGP 265,000; Customer Workspace is allocated EGP 23,000 within that total. Admin can open its Subscription view from the budget table.
+- Build, static references and browser walkthrough should be checked after publication.

@@ -6,12 +6,8 @@
 - The prototype is browser-local. Account login, email, conferencing, payments, storage, webhooks and hosting credentials are simulations. External services, persistent permissions and production security are implementation work, not acceptance results from this preview.
 - The development quotation remains EGP 265,000 over two calendar months; illustrative customer plan prices in the demo are separate.
 
-## AI helper extension — 25 October 2026
+## Customer Workspace and AI helper — 25 October 2026
 
-- A student demonstration role and a role-aware guided assistant are implemented in the static prototype. The student courses are fictional examples, not imported Moodle data.
-- English and Arabic guided answers derive from browser-local sample records. No model endpoint, tool execution, backend RBAC or persistence exists. Production AI integration is specified separately in `AI_HELPER.md`.
-
-## Scope clarification — 25 October 2026
-
-- The earlier speculative customer-facing workspace has been removed from the demo navigation/login. Admin customer records remain because the source associates them with subscriptions and events.
-- Admin → Scope & budget allocates the full EGP 265,000 across 11 workstreams, including backend, AI implementation, QA and launch. This is an internal discussion view and does not add to the signed quotation. Vendor recurring charges are separate, subject to actual provider selection and usage.
+- Customer Workspace has been restored as the customer-facing demonstration role: dashboard, meetings, calendar, recordings, team, subscription, settings and an AI helper. Student navigation, lessons and progress were removed from the preview.
+- Guided English/Arabic assistant answers use browser-local sample data. No live model, Laravel endpoint or production permissions are connected.
+- Admin → Scope & budget allocates EGP 265,000 across 11 workstreams, including EGP 23,000 for Customer Workspace, backend, AI implementation, QA and launch. Recurring vendor charges remain separate.
