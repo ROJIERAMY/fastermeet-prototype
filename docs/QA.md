@@ -44,3 +44,10 @@
 - Customer Join opened a copyable demo invitation with date and time, plus an explicit silent preview message. It did not request microphone/camera access or start media. Zoom room creation and real meeting URLs still require backend integration.
 - Admin overview shows counts from the shared platform catalog. The sidebar meeting count now uses the same linked events, scoped to the selected customer when previewing their workspace.
 - `npm run build` and `npm run check` passed after the final sidebar count correction.
+
+## Visible floating assistant — 25 October 2026
+
+- Restored missing base styles for the floating launcher, conversation panel, quick prompts and mobile bottom sheet. The previous stylesheet contained only the mobile override and palette, which left the assistant out of the expected floating position.
+- Customer scheduling suggestions use the linked active subscription, matching host capacity and a free slot, then open a prefilled review form. Admin schedule requests direct the operator to choose a customer or use Events, rather than silently using another customer's plan.
+- Corrected customer team and subscription responses to use the selected customer records. Model API integration remains a production task; this static preview's guided replies are deterministic.
+- `npm run build` and `npm run check` passed. Browser confirmation on the published desktop and mobile view follows deployment.
