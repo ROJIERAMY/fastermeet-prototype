@@ -23,3 +23,8 @@
 
 - Local browser showed separate Individual/Business plan entitlements, Meeting and Webinar service selection, capacity choices, term choices and a no-charge review dialog. Changing Meeting to Webinar replaced capacities with 500 / 1,000 / 3,000 / 5,000 / 10,000.
 - Final package prices and combination/eligibility rules are intentionally pending; no derived recurring cost was added to the EGP 265,000 development quotation.
+
+## Subscription items reference — 25 October 2026
+
+- Admin → Products defaults to Subscription items with product cards, linked plan/add-on counts and a product detail panel. Selecting Faster Meet showed two sample plans and one add-on.
+- Add plan after product selection prefilled the Product field. Capacity options were expanded to all New Vision Meeting and Webinar sizes; billing cycles include 100-hour bundle, day, week, month and year.

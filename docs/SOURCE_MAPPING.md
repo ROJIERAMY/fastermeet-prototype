@@ -26,3 +26,5 @@ The source `Customers` route is an admin CRUD module. Customer Workspace is a pr
 ## New Vision business vision
 
 The three-page New Vision document supplied 25 October 2026 describes Individual and Business capabilities and Zoom Meeting/Webinar capacities and billing terms. It is product direction, distinct from the reviewed React/Umi ZIP. Package price and final logic are explicitly pending from Amr. The prototype displays the distribution without claiming backend completion or a commercial rate.
+
+The supplied screenshot of `/products/subscription-items` shows product cards with linked plan/add-on counts, a selected-product details area and Add Plan, Add Addon and Add Billing Cycle actions. The admin prototype now presents that hierarchy, backed by its browser-local sample collections. The live reference redirected to login (401) during review, so authenticated contents were not inferred beyond the supplied image and frontend source.

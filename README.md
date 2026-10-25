@@ -19,7 +19,7 @@ The admin sections were mapped against the user-supplied `app.fastermeet.com-dev
 | Video hosting | Platform → account type → capacity → hosting account; parent, assignment, usage, concurrency and status |
 | System users | Name, email, role and a password-shaped demo field that is discarded immediately |
 
-Each admin collection supports list, search, view, create, edit and delete. Deletion is blocked while other demo records reference an item. The public demo never stores hosting credentials, passwords or real customer data.
+Admin → Products → Subscription items now groups plans and add-ons under each product, with product-linked Add plan / Add add-on actions and Add billing cycle. Each admin collection supports list, search, view, create, edit and delete. Deletion is blocked while other demo records reference an item. The public demo never stores hosting credentials, passwords or real customer data.
 
 The prototype has sample meeting, calendar, room, recording, team, reporting and integration previews. Customer records remain an admin entity linked to subscriptions and events. The Customer Workspace demonstrates a customer-facing view of meetings, calendar, recordings, team and subscription. The full workstream allocation of the agreed **EGP 265,000 / two calendar months** development quotation is available in Admin → Scope & budget and `docs/SCOPE_BUDGET.md`. Sample product-plan prices are unrelated to that project quotation.
 
