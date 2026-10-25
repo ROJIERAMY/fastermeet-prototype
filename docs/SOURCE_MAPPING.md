@@ -22,3 +22,7 @@ Reviewed 22 October 2026 from the supplied `app.fastermeet.com-develop.zip`. The
 The original frontend has several demo/template screens and a generic README. Its presence does not prove that matching backend endpoints work. This prototype is a UI review artifact with fictional local data. Meeting room, chat, recording, payment, Moodle, S3 and Zoom experiences are simulations, not verified production features of the ZIP. Laravel routes, controllers, schema, tests and private API contracts were not in the uploaded archive.
 
 The source `Customers` route is an admin CRUD module. Customer Workspace is a proposed customer-facing presentation of meetings, recordings, team and subscription data, not a route verified in this ZIP. The AI helper is also proposed; see `SCOPE_BUDGET.md` and `AI_HELPER.md`.
+
+## New Vision business vision
+
+The three-page New Vision document supplied 25 October 2026 describes Individual and Business capabilities and Zoom Meeting/Webinar capacities and billing terms. It is product direction, distinct from the reviewed React/Umi ZIP. Package price and final logic are explicitly pending from Amr. The prototype displays the distribution without claiming backend completion or a commercial rate.

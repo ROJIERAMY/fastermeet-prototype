@@ -23,3 +23,5 @@ button.hero-link{background:transparent;color:#d7e6db;padding:8px 12px}button.he
 
 .budget-table{table-layout:fixed;width:100%;min-width:850px}.budget-table th:nth-child(1){width:20%}.budget-table th:nth-child(2){width:10%;text-align:right}.budget-table th:nth-child(3){width:39%}.budget-table th:nth-child(4){width:20%}.budget-table th:nth-child(5){width:11%}.budget-table td{overflow-wrap:anywhere}.budget-table td:nth-child(2){color:#163f3d}
 .budget-table td,.budget-table th{white-space:normal;overflow-wrap:anywhere}.budget-table .budget-amount{white-space:nowrap}.budget-table .budget-basis{white-space:normal}
+
+.package-config .package-step{padding:17px 0;border-bottom:1px solid var(--line)}.package-step>b{display:block;margin-bottom:10px}.package-choices{display:flex;flex-wrap:wrap;gap:8px}.package-choices button{background:#f0f5ef;color:#183f3b;border:1px solid #dce9dc}.package-choices button.active{background:#183f3b;color:#fff;border-color:#183f3b}.package-config .notice{margin:20px 0;line-height:1.7}.package-config .panel-head p{margin:5px 0 0}

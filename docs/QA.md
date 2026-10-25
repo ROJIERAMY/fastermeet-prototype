@@ -18,3 +18,8 @@
 - Local browser: an English request for tomorrow at 11 am returned an available 45-minute slot; Review proposed meeting opened the schedule form with date, time, duration and host prefilled.
 - Arabic numerals and wording (`احجز اجتماع بكرة الساعة ١١ صباحًا لمدة ٣٠ دقيقة`) returned an 11:00, 30-minute proposal.
 - The planner checks overlap against browser-local scheduled meetings and the form rechecks availability before saving. Real invitations, Zoom links, and LLM responses are still outside this static preview.
+
+## New Vision package mapping — 25 October 2026
+
+- Local browser showed separate Individual/Business plan entitlements, Meeting and Webinar service selection, capacity choices, term choices and a no-charge review dialog. Changing Meeting to Webinar replaced capacities with 500 / 1,000 / 3,000 / 5,000 / 10,000.
+- Final package prices and combination/eligibility rules are intentionally pending; no derived recurring cost was added to the EGP 265,000 development quotation.

@@ -11,3 +11,9 @@
 - Customer Workspace has been restored as the customer-facing demonstration role: dashboard, meetings, calendar, recordings, team, subscription, settings and an AI helper. Student navigation, lessons and progress were removed from the preview.
 - Guided English/Arabic assistant answers and meeting suggestions use browser-local sample data. Proposed meetings require review and saving through the existing form. No live model, Laravel endpoint or production permissions are connected.
 - Admin → Scope & budget allocates EGP 265,000 across 11 workstreams, including EGP 23,000 for Customer Workspace, backend, AI implementation, QA and launch. Recurring vendor charges remain separate.
+
+## New Vision plans and packages — 25 October 2026
+
+- The supplied three-page New Vision PDF distinguishes Individual and Business workspace plans from Zoom capacity and duration packages. Customer → Subscription now presents an interactive four-step configuration and Admin → Products → Plans shows the mapping.
+- Meeting capacities: 100, 300, 500, 1,000. Webinar capacities: 500, 1,000, 3,000, 5,000, 10,000. Terms: hour bundle (100 hours mentioned), day, week, month, year and combined duration. Trial: 10 hours.
+- The document explicitly leaves business rules and package pricing pending from Amr. Existing admin catalog EGP values are labeled illustrative legacy records; the new configuration calculates no price or charge.
