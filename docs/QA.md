@@ -35,3 +35,12 @@
 - Local prototype: selected Faster Meet showed two illustrative plan cards; Add plan preselected the product and exposed the expanded capacities, billing cycles, customer types, assignment and EGP fields. The Add-ons tab displayed linked storage, and View plan mapping opened the Individual/Business table.
 - Customer package advisor: 750 webinar attendees plus team collaboration recommended Business / Webinar / 1,000 / Month. This is deterministic browser-local logic; it is not a production AI or approved commercial offer.
 - `npm run build` and `npm run check` passed after the redesign.
+
+## Connected admin and customer preview — 25 October 2026
+
+- Read-only live admin review covered Dashboard, Customers, Subscriptions, Events, Video Hosting (platforms, account types, capacities and accounts), and System Settings users. The prototype mirrors their record relationships with fictional browser data; no live admin record was changed.
+- Published GitHub Pages preview: Admin → Customers → Preview workspace opened Acme Studio and showed only its linked event and active Business entitlement.
+- Customer → Schedule meeting created a 26 October 14:00 meeting. Admin Overview and Events immediately showed it under Acme Studio / Business. Editing its title in Admin → Events appeared in the customer overview after switching back.
+- Customer Join opened a copyable demo invitation with date and time, plus an explicit silent preview message. It did not request microphone/camera access or start media. Zoom room creation and real meeting URLs still require backend integration.
+- Admin overview shows counts from the shared platform catalog. The sidebar meeting count now uses the same linked events, scoped to the selected customer when previewing their workspace.
+- `npm run build` and `npm run check` passed after the final sidebar count correction.
